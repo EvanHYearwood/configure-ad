@@ -2,10 +2,6 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
-
-
 <h1 align="center">Azure Active Directory Lab - Deploy and Configure AD</h1>
 
 <p>The goal of this lab is to deploy and configure Active Directory (AD) in a virtualized environment using Azure. You will create a Domain Controller (DC), join a client machine to the domain, and configure user accounts and Remote Desktop access for both administrative and non-administrative users.</p>
