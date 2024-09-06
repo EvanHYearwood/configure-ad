@@ -89,3 +89,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <li>Once the script completes, check ADUC to ensure the new users are created in the appropriate OU.</li>
   <li>Attempt to log into Client-1 with one of the newly created users to verify the account works correctly.</li>
 </ul>
+
+<h2>Conclusion</h2>
+<p>In this lab, we deployed and configured a working Active Directory environment. We set up a Domain Controller and a client machine in Azure, ensured they could communicate, and installed Active Directory Domain Services. After creating a new domain, we added organizational units and user accounts, including an admin account, and joined the client to the domain.</p>
+
+<p>We also configured Remote Desktop access for domain users and used a PowerShell script to generate additional users. Finally, we tested logging into the client with one of the new accounts. This lab gave us hands-on experience with essential Active Directory tasks and configurations.</p>
