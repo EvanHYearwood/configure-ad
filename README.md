@@ -54,7 +54,7 @@
   <li>Restart DC-1 after promotion and log in using the domain account: <code>mydomain.com\labuser</code>.</li>
 </ul>
 
-<h2>Step 4: Create Admin and Normal User Accounts in Active Directory</h2>
+<h2>Step 4: Create Admin and Organizational Units (OUs) in Active Directory</h2>
 <ul>
   <li>In Active Directory Users and Computers (ADUC), create 3 Organizational Units (OU)</li>
    <li>Create 1st OU named <strong>_EMPLOYEES</strong> for employee users.</li>
