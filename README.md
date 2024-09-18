@@ -56,8 +56,10 @@
 
 <h2>Step 4: Create Admin and Normal User Accounts in Active Directory</h2>
 <ul>
-  <li>In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called <strong>_EMPLOYEES</strong> for employee accounts.</li>
-  <li>Create another OU named <strong>_ADMINS</strong> for administrative users.</li>
+  <li>In Active Directory Users and Computers (ADUC), create 3 Organizational Units (OU)</li>
+   <li>Create 1st OU named <strong>_EMPLOYEES</strong> for employee users.</li>
+   <li>Create 2nd OU named <strong>_ADMINS</strong> for administrative users.</li>
+   <li>Create 3rd OU named <strong>_CLIENTS</strong> for client.</li>
   <li>Create a new user named “Jane Doe” with the username <code>jane_admin</code> and add her to the <strong>Domain Admins</strong> security group.</li>
   <li>Log out and back in to DC-1 as <code>mydomain.com\jane_admin</code> to use this admin account moving forward.</li>
 </ul>
