@@ -13,8 +13,8 @@
   <li>Install Active Directory Domain Services (AD DS) on the Domain Controller.</li>
   <li>Create administrative and standard user accounts in Active Directory.</li>
   <li>Join the Client machine to the domain.</li>
-  <li>Configure Remote Desktop access for non-administrative users on the Client.</li>
-  <li>Create additional user accounts using a script and verify access.</li>
+  <li>Apply Group Policy to configure Remote Desktop access for non-administrative users in the <strong>_CLIENTS</strong> and <strong>_EMPLOYEES</strong> Organizational Units (OUs).</li>
+  <li>Create additional user accounts using a Powershell ISE script and verify access.</li>
 </ol>
 
 <h2>Environments and Technologies Used</h2>
@@ -73,14 +73,14 @@
   <li>(Optional) Create an OU called <strong>_CLIENTS</strong> and move Client-1 into this OU for organizational purposes.</li>
 </ul>
 
-<h2>Step 6: Configure Remote Desktop for Non-Administrative Users</h2>
+<h2>Step 6: Configure Remote Desktop via Group Policy for Non-Administrative Users</h2>
 <ul>
-  <li>Log into Client-1 as <code>mydomain.com\jane_admin</code> and open the system properties.</li>
-  <li>Click on "Remote Desktop" and allow <strong>domain users</strong> access to Remote Desktop on Client-1.</li>
-  <li>This step enables regular, non-administrative users to log in via Remote Desktop. Typically, this is done using Group Policy for larger networks to manage multiple systems at once.</li>
+  <li>Apply a new Group Policy to both <strong>_CLIENTS</strong> and <strong>_EMPLOYEES</strong> Organizational Units to allow <strong>domain users</strong> to access Remote Desktop.</li>
+  <li>This centralizes management of Remote Desktop settings across all machines in these OUs, avoiding the need to configure individual clients manually.</li>
+  <li>Ensure the policy is applied by running <code>gpupdate /force</code> on the client machines or wait for the next policy refresh cycle.</li>
 </ul>
 
-<h2>Step 7: Create Additional Users and Test Logins</h2>
+<h2>Step 7: Create additional user accounts using a Powershell ISE script and verify access.</h2>
 <ul>
   <li>Log into DC-1 as <code>jane_admin</code> and open PowerShell ISE as an administrator.</li>
   <li>Use PowerShell to create multiple user accounts in AD, following a scripted process.</li>
