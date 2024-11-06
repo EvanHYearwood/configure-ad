@@ -6,6 +6,8 @@
 
 <p>The goal of this lab is to deploy and configure Active Directory (AD) in a virtualized environment using Azure. We will create a Domain Controller (DC), join a client machine to the domain, and configure user accounts and Remote Desktop access for both administrative and non-administrative users.</p>
 
+<h2>Evan H. Yearwood - Portfolio Project</h2>
+
 - ### [YouTube: Azure Active Directory Lab - Deploy and Configure AD](https://youtu.be/2BCTiyioWG0)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
